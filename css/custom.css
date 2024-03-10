@@ -1,0 +1,21 @@
+.flex-col {
+    display: flex !important;
+    flex-direction: column !important;
+}
+
+.justify-center {
+    justify-content: center !important;
+}
+
+.align-center {
+    align-items: center;
+}
+
+.title {
+    font-size: 36px !important;
+    margin-bottom: 30px;
+}
+
+ul {
+    font-size: 26px !important;
+}

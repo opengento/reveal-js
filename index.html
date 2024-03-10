@@ -3,21 +3,104 @@
 	<head>
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-
-		<title>reveal.js</title>
-
+		<title>Opengento 2024 - Reveal.js</title>
 		<link rel="stylesheet" href="dist/reset.css">
 		<link rel="stylesheet" href="dist/reveal.css">
 		<link rel="stylesheet" href="dist/theme/black.css">
-
-		<!-- Theme used for syntax highlighted code -->
 		<link rel="stylesheet" href="plugin/highlight/monokai.css">
+		<link rel="stylesheet" href="./css/custom.css">
 	</head>
 	<body>
 		<div class="reveal">
 			<div class="slides">
-				<section>Slide 1</section>
-				<section>Slide 2</section>
+				<section class="flex-col items-center">
+					<div class="title" style="font-size: 60px !important;">Hello Opengento 👋</div>
+				</section>
+				<section data-background-color="aquamarine">
+					<div class="title">Qu'est-ce que Reveal.js ?</div>
+					<ul>
+						<li class="fragment">
+							Librarie JS pour support de présentation HTML, CSS, JS
+						</li>
+						<li class="fragment fade-up">
+							Transitions, animations (zooms, fades, transforms..)
+						</li>
+						<li class="fragment">
+							Markdown supporté
+						</li>
+						<li class="fragment fade-in">
+							<span class="fragment highlight-red">
+								<span class="fragment highlight-blue">
+									Sections, fragments
+								</span>
+							</span>
+						</li>
+						<li class="fragment">
+							Plugins
+						</li>
+					</ul>
+				</section>
+				<section data-transition="zoom" data-background-color="purple">
+					<div  class="title" style="color:white">Speaker Notes 📝</div>
+					<img src="./img/speakernote.png" alt="">
+				</section>
+				<section>
+					<section>
+						<div class="title">Slides horizontales...</div>
+					</section>
+					<section data-background-color="white">
+						<div class="title" style="color: black;">Et verticales ! 🫶</div>
+					</section>
+				</section>
+				<section>
+					<div class="title">Des extraits de code...</div>
+					<pre>
+						<code data-line-numbers="3,8-10">
+							<table>
+								<tr>
+									<td>Apples</td>
+									<td>$1</td>
+									<td>7</td>
+								</tr>
+								<tr>
+									<td>Oranges</td>
+									<td>$2</td>
+									<td>18</td>
+								</tr>
+							</table>
+						</code>
+					</pre>
+				</section>
+				<section data-transition="convex" data-transition-speed="slow" class="flex-col items-center">
+					<div class="title">Export PDF</div>
+				</section>
+				<section data-transition="concave" data-transition-speed="slow" class="flex-col items-center">
+					<div class="title">API disponible 👌🏼</div>
+					<img src="./img/api.png" alt="">
+				</section>
+				<section data-transition="zoom" class="flex-col items-center">
+					<div class="title">Un tas de plugins sympas 🚀</div>
+					<ul>
+						<li class="fragment" data-transition="zoom" data-transition-speed="slow">
+							Audio Slideshow 
+						<li class="fragment fade-up">
+							Reveal.js animate : <a target="blank" href="https://antoniofregoso.github.io/reveal.js-animate">(demo)</a>
+						</li>
+						<li class="fragment fade-up">
+							Reveal code focus : <a target="blank" href="https://bnjmnt4n.github.io/reveal-code-focus/#/2/1">(demo)</a>
+						</li>
+					</ul>
+				</section>
+				<section data-transition="concave" data-transition-speed="slow" class="flex-col items-center">
+					<img src="./img/focus.png" alt="">
+				</section>
+				<section data-transition="zoom" data-transition-speed="slow">
+					<div class="title">Reveal, c'est cool !</div>
+					<iframe src="https://giphy.com/embed/5VKbvrjxpVJCM" width="480" height="384" frameBorder="0" class="giphy-embed" allowFullScreen></iframe>
+				</section>
+				<section data-background-color="#e55039">
+					<div class="title">Merci ! Des questions ? 🙋🏻‍♂️</div>
+				</section>
 			</div>
 		</div>
 
@@ -25,14 +108,10 @@
 		<script src="plugin/notes/notes.js"></script>
 		<script src="plugin/markdown/markdown.js"></script>
 		<script src="plugin/highlight/highlight.js"></script>
-		<script>
-			// More info about initialization & config:
-			// - https://revealjs.com/initialization/
-			// - https://revealjs.com/config/
-			Reveal.initialize({
-				hash: true,
 
-				// Learn about plugins: https://revealjs.com/plugins/
+		<script>
+			Reveal.initialize({
+				hash: false,
 				plugins: [ RevealMarkdown, RevealHighlight, RevealNotes ]
 			});
 		</script>
